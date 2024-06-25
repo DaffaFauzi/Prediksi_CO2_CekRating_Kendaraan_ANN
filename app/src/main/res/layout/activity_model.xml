@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Model">
+
+
+    <ImageView
+        android:id="@+id/dor3"
+        android:layout_width="match_parent"
+        android:layout_height="180sp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/rounded"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80sp"
+        android:text="Main Menu"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dor3"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Arsitektur Model"
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+    <ImageView
+        android:id="@+id/line1"
+        android:layout_width="190sp"
+        android:layout_height="10sp"
+        android:src="@drawable/line"
+        android:layout_below="@id/model"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:id="@+id/sumbertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:layout_below="@id/line1"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Arsitektur model yang digunakan untuk proses klasifikasi pada aplikasi ini adalah Artificial Neural Network (ANN). Artificial Neural Network (ANN) adalah sistem komputasi yang terinspirasi oleh jaringan saraf biologis yang membentuk otak manusia. ANN digunakan dalam bidang pembelajaran mesin (machine learning) dan kecerdasan buatan (artificial intelligence) untuk memodelkan dan menyelesaikan berbagai masalah yang kompleks"
+        android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/model2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sumbertext"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true"
+                android:text="Model Yang Dibangun"
+                android:textSize="24dp"
+                android:textStyle="bold"/>
+            <ImageView
+                android:id="@+id/line2"
+                android:layout_width="240sp"
+                android:layout_height="10sp"
+                android:src="@drawable/line"
+                android:layout_below="@id/model2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:id="@+id/sumbertext2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_below="@id/line2"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:text="Dalam membangun model ANN, kita menggunakan lapisan dense di mana setiap neuron terhubung dengan semua neuron di lapisan sebelumnya dan di lapisan berikutnya."
+                android:textSize="18dp"/>
+            <TextView
+                android:id="@+id/textView_ordered_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sumbertext2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:id="@+id/model3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_ordered_list"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true"
+                android:text="Akurasi Model"
+                android:textSize="24dp"
+                android:textStyle="bold"/>
+            <ImageView
+                android:id="@+id/line3"
+                android:layout_width="160sp"
+                android:layout_height="10sp"
+                android:src="@drawable/line"
+                android:layout_below="@id/model3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:id="@+id/sumbertext3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_below="@id/line3"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:text="Model yang berhasil dibangun telah dijalankan sebanyak 10 epoch dan memiliki nilai akurasi sebanyak 0.8526 dengan nilai loss sebanyak 0.3925"
+                android:textSize="18dp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

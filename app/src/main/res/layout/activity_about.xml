@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".about">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <ImageView
+        android:id="@+id/drop"
+        android:layout_width="match_parent"
+        android:layout_height="180sp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/rounded"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80sp"
+        android:text="Tentang Aplikasi"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/sumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drop"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Sumber Dataset"
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+    <ImageView
+        android:id="@+id/line1"
+        android:layout_width="170sp"
+        android:layout_height="10sp"
+        android:src="@drawable/line"
+        android:layout_below="@id/sumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:id="@+id/sumbertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:layout_below="@id/line1"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Dataset ini diambil dari Situs Kaggle.com yang diupload oleh Rini Christy yang memuat informasi mengenai data emisi kendaraan di Canada pada tahun 2022."
+        android:textSize="18dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tujuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sumbertext"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:text="Tujuan Aplikasi"
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+    <ImageView
+        android:id="@+id/line2"
+        android:layout_width="170sp"
+        android:layout_height="10sp"
+        android:src="@drawable/line"
+        android:layout_below="@id/tujuan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:id="@+id/tujuantext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:layout_below="@id/line2"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Untuk membantu masyarakat memeriksa rating karbon dioksida kendaraannya. Sehingga kendaraan yang digunakan masyarakat menjadi tetap lingkungan"
+        android:textSize="18dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/cara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tujuantext"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:text="Cara Menggunakan Aplikasi"
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+    <ImageView
+        android:id="@+id/line3"
+        android:layout_width="298sp"
+        android:layout_height="10sp"
+        android:src="@drawable/line"
+        android:layout_below="@id/cara"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:id="@+id/caratext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:layout_below="@id/line3"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Untuk menggunakan aplikasi, cukup pilih menu Simulasi Model pada halaman menu, lalu masukkan nilai yang diminta, lalu klik Predict"
+        android:textSize="18dp"
+        android:textAlignment="center"/>
+
+</RelativeLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fuel Consumption (mpg)"
+        app:layout_constraintStart_toStartOf="@+id/et1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="4dp"
+        android:textSize="18sp"
+        android:textColor="#996750A4"/>
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="16"
+        android:hint="Input Fuel Consumption (mpg)"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/t1" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Smog Rating"
+        app:layout_constraintStart_toStartOf="@+id/t1"
+        app:layout_constraintTop_toBottomOf="@+id/et1"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textColor="#996750A4"/>
+
+    <ImageView
+        android:layout_width="24sp"
+        android:layout_height="24sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:onClick="smog"
+        android:src="@drawable/info"
+        app:layout_constraintLeft_toRightOf="@+id/t2"
+        app:layout_constraintTop_toBottomOf="@+id/et1"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:ems="16"
+        android:hint="Input Smog Rating"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/et1"
+        app:layout_constraintStart_toStartOf="@+id/et1"
+        app:layout_constraintTop_toTopOf="@+id/t2" />
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kelas Kendaraan"
+        app:layout_constraintStart_toStartOf="@+id/t2"
+        app:layout_constraintTop_toBottomOf="@+id/et2"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textColor="#996750A4"/>
+
+    <ImageView
+        android:layout_width="24sp"
+        android:layout_height="24sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:onClick="kelas_kendaraan"
+        android:src="@drawable/info"
+        app:layout_constraintLeft_toRightOf="@+id/t3"
+        app:layout_constraintTop_toBottomOf="@+id/et2"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="16"
+        android:hint="Input Kelas Kendaraan"
+        android:layout_marginTop="14dp"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/et2"
+        app:layout_constraintStart_toStartOf="@+id/et2"
+        app:layout_constraintTop_toTopOf="@+id/t3" />
+
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cylinders"
+        app:layout_constraintStart_toStartOf="@+id/t1"
+        app:layout_constraintTop_toBottomOf="@+id/et3"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textColor="#996750A4"/>
+    <EditText
+        android:id="@+id/et4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="16"
+        android:hint="Input Jumlah Cylinders"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/et3"
+        app:layout_constraintStart_toStartOf="@+id/et3"
+        app:layout_constraintTop_toTopOf="@+id/t4" />
+
+    <TextView
+        android:id="@+id/t5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mesin Kendaraan"
+        app:layout_constraintStart_toStartOf="@+id/t1"
+        app:layout_constraintTop_toBottomOf="@+id/et4"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textColor="#996750A4"/>
+    <EditText
+        android:id="@+id/et5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="16"
+        android:hint="Input Ukuran Mesin"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/et4"
+        app:layout_constraintStart_toStartOf="@+id/et4"
+        app:layout_constraintTop_toTopOf="@+id/t5"/>
+
+    <TextView
+        android:id="@+id/t6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Konsumsi Baha Bakar di Tol"
+        app:layout_constraintStart_toStartOf="@+id/t1"
+        app:layout_constraintTop_toBottomOf="@+id/et5"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textColor="#996750A4"/>
+    <EditText
+        android:id="@+id/et6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="16"
+        android:hint="Input Konsumsi Bahan Bakar di Tol (L/100km)"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/et5"
+        app:layout_constraintStart_toStartOf="@+id/et5"
+        app:layout_constraintTop_toTopOf="@+id/t6" />
+
+    <TextView
+        android:id="@+id/t7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Konsumsi Baha Bakar di Kota"
+        app:layout_constraintStart_toStartOf="@+id/t1"
+        app:layout_constraintTop_toBottomOf="@+id/et6"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textColor="#996750A4"/>
+    <EditText
+        android:id="@+id/et7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="16"
+        android:hint="Input Konsumsi Bahan Bakar di Kota (L/100km)"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/et6"
+        app:layout_constraintStart_toStartOf="@+id/et6"
+        app:layout_constraintTop_toTopOf="@+id/t7" />
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Predict"
+        app:layout_constraintStart_toStartOf="@+id/et7"
+        app:layout_constraintTop_toBottomOf="@+id/et7"
+        app:layout_constraintEnd_toEndOf="@+id/et7"/>
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text=""
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnCheck"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="@+id/btnCheck"
+        app:layout_constraintTop_toBottomOf="@+id/btnCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <ImageView
+        android:id="@+id/dor"
+        android:layout_width="match_parent"
+        android:layout_height="180sp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/rounded"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80sp"
+        android:text="Main Menu"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/menu1"
+        android:clickable="true"
+        android:onClick="abouts"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:layout_below="@id/dor"
+        android:layout_marginTop="16sp">
+
+        <ImageView
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:src="@drawable/info"
+            android:layout_marginStart="8sp"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="74sp"
+            android:layout_gravity="center_vertical"
+            android:text="Tentang Aplikasi"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_dark"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/menu2"
+        android:clickable="true"
+        android:onClick="dataset"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:layout_below="@id/menu1"
+        android:layout_marginTop="16sp">
+
+        <ImageView
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:src="@drawable/baseline_dataset_24"
+            android:layout_marginStart="8sp"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="74sp"
+            android:layout_gravity="center_vertical"
+            android:text="Sumber Dataset"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_dark"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/menu3"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:onClick="fitur"
+        android:layout_height="80sp"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:layout_below="@id/menu2"
+        android:layout_marginTop="16sp">
+
+        <ImageView
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:src="@drawable/baseline_dataset_linked_24"
+            android:layout_marginStart="8sp"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="74sp"
+            android:layout_gravity="center_vertical"
+            android:text="Fitur-fitur yang digunakan"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_dark"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/menu4"
+        android:clickable="true"
+        android:onClick="model"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:layout_below="@id/menu3"
+        android:layout_marginTop="16sp">
+
+        <ImageView
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:src="@drawable/baseline_beenhere_24"
+            android:layout_marginStart="8sp"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="74sp"
+            android:layout_gravity="center_vertical"
+            android:text="Algoritma Model Yang Digunakan"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_dark"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/menu5"
+        android:clickable="true"
+        android:onClick="main"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:layout_below="@id/menu4"
+        android:layout_marginTop="16sp">
+
+        <ImageView
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:src="@drawable/baseline_auto_fix_high_24"
+            android:layout_marginStart="8sp"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="74sp"
+            android:layout_gravity="center_vertical"
+            android:text="Simulasi Model"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_dark"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

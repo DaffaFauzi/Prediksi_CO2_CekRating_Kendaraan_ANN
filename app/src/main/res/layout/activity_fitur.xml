@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fitur">
+
+    <ImageView
+        android:id="@+id/dor2"
+        android:layout_width="match_parent"
+        android:layout_height="180sp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/rounded"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80sp"
+        android:text="Fitur"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dor2"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fitur1"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fuel Consumption(Comb (mpg))"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_dark"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="float64"
+            android:layout_gravity="end"
+            android:textStyle="italic"
+            android:textColor="@color/purple_dark"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kolom yang berisi informasi konsumsi bahan bakar kendaraan baik di kota maupun di tol dalam satuan Liter/Km"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="28dp"
+            android:textColor="@color/black"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fitur2"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/fitur1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smog Rating"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_dark"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="int64"
+            android:layout_gravity="end"
+            android:textStyle="italic"
+            android:textColor="@color/purple_dark"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kolom yang berisi informasi rating asap kendaraan dalam skala 1 (buruk) - 10 (sangat baik) "
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="28dp"
+            android:textColor="@color/black"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fitur3"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/fitur2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Class"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_dark"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="object"
+            android:layout_gravity="end"
+            android:textStyle="italic"
+            android:textColor="@color/purple_dark"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kolom yang berisi informasi jenis kendaraan yang digunakan"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="28dp"
+            android:textColor="@color/black"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fitur4"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/fitur3">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cylinder"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_dark"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="int64"
+            android:layout_gravity="end"
+            android:textStyle="italic"
+            android:textColor="@color/purple_dark"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kolom yang berisi informasi jumlah silinder atau ruang bahan bakar pada kendaraan"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="28dp"
+            android:textColor="@color/black"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fitur5"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/fitur4">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Engine Size"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_dark"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="int64"
+            android:layout_gravity="end"
+            android:textStyle="italic"
+            android:textColor="@color/purple_dark"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kolom yang berisi informasi ukuran silinder atau ruang bahan bakar pada kendaraan dalam satuan Liter"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="28dp"
+            android:textColor="@color/black"/>
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fitur6"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/fitur5">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fuel Consumption(Hwy (L/100 km))"
+                android:layout_marginStart="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/purple_dark"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="float64"
+                android:layout_gravity="end"
+                android:textStyle="italic"
+                android:textColor="@color/purple_dark"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kolom yang berisi informasi konsumsi bahan bakar kendaraan di tol dalam satuan Liter/Km"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="28dp"
+                android:textColor="@color/black"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fitur7"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/fitur6">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fuel Consumption(City (L/100 km))"
+                android:layout_marginStart="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/purple_dark"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="float64"
+                android:layout_gravity="end"
+                android:textStyle="italic"
+                android:textColor="@color/purple_dark"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kolom yang berisi informasi konsumsi bahan bakar kendaraan di kota dalam satuan Liter/Km"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="28dp"
+                android:textColor="@color/black"/>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
